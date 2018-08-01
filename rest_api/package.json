@@ -4,7 +4,7 @@
   "description": "This is a simple rest api, i am building it to learn more about the subject'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/server.js"
   },
   "keywords": [
     "rest",
