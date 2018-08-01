@@ -1,10 +1,11 @@
 'use strict'
 
+
+const app = require('../src/app')
 const http = require("http");
 const debug = require("debug")('nodestr:server');
-const express = require('express');
 
-const app = express();
+
 const port = normalizePort(process.env.PORT || '3000');
 
 app.set('port', port);
