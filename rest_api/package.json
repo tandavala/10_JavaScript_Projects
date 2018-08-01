@@ -2,7 +2,7 @@
   "name": "rest_api",
   "version": "1.0.0",
   "description": "This is a simple rest api, i am building it to learn more about the subject'",
-  "main": "server",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +11,10 @@
     "api"
   ],
   "author": "jose tandavala",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "http": "0.0.0"
+  }
 }
