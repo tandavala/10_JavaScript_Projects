@@ -4,7 +4,7 @@
   "description": "This is a simple rest api, i am building it to learn more about the subject'",
   "main": "index.js",
   "scripts": {
-    "start": "node bin/server.js"
+    "start": "nodemon bin/server.js"
   },
   "keywords": [
     "rest",
