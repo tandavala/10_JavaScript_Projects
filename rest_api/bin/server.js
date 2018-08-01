@@ -1,9 +1,8 @@
 'use strict'
 
-
 const app = require('../src/app')
 const http = require("http");
-const debug = require("debug")('nodestr:server');
+const debug = require("debug")('prozone:server');
 
 
 const port = normalizePort(process.env.PORT || '3000');
@@ -64,4 +63,4 @@ function onListening(){
         ? 'pip' + addr
         : 'port' + addr.port;
     debug('Listening on ' + bind);
-}
+}s
