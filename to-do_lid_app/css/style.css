@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 @@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/roboto.woff2') format('woff2');
+
+}
+
+body, input, button {
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -31,6 +32,9 @@ header input {
   border-bottom-right-radius: 25px;
   border: 0px;
   color: #fff;
+  font-size: 15px;
+  font-weight: 400px;
+  text-indent: 20px;
   box-shadow: none;
   outline: none;
   appearance:none;
@@ -42,8 +46,7 @@ header input {
 header input::placeholder {
   color: rgba(255, 255, 255, 0.75);
   font-size: 19px;
-  padding-left: 12px;
-  font-family: Roboto;
+  font-family: Roboto-Regular;
 }
 header input::-ms-placeholder {
   color: rgba(255, 255, 255, 0.75);
