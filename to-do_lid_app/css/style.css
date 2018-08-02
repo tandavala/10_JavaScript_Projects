@@ -76,3 +76,15 @@ header button {
   -ms-appearance: none;
 
 }
+/*----------------------------------------------------------------------------*/
+header button svg {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -8px 0 0 -8px;
+}
+header button svg .fill {
+  fill:#25b99a;
+}
