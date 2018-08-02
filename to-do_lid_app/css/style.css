@@ -6,6 +6,7 @@
 
 body {
   background: #edf0f1;
+  padding: 80px 0 0 0;
 }
 body, input, button {
   font-family: 'Roboto', sans-serif;
@@ -91,4 +92,9 @@ header button svg {
 }
 header button svg .fill {
   fill:#25b99a;
+}
+/*------------------------------------------------------------------------------*/
+ul.todo {
+  width: 100%;
+  float: left;
 }
