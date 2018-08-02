@@ -33,6 +33,9 @@ function addItemTodo(text){
   complete.classList.add('complete');
   complete.innerHTML = completeSVG;
 
+  // add click event for the complete
+  complete.addEventListener('click', complteTask);
+
   buttons.appendChild(remove);
   buttons.appendChild(complete);
   item.appendChild(buttons);
@@ -42,6 +45,19 @@ function addItemTodo(text){
 // remove item function
 function removeItem(){
   var item = this.parentNode.parentNode;
-  var parnt = item.parentNode;
-  parnt.removeChild(item);
+  var parent = item.parentNode;
+  parent.removeChild(item);
+}
+
+// complete task
+function complteTask(){
+  var item = this.parentNode.parentNode;
+  var parent = item.parentNode;
+  var id = parent.id;
+
+  // check whether the item should be added  to the completed or readd the todo list
+  var target = (id === 'todo') ? document.getElementById('completed'): document.getElementById('todo');
+  parent.removeChild(item);
+  target.insertBefore(item, target.childNodes[0]);
+
 }

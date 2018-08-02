@@ -178,10 +178,18 @@ ul.todo {
 .container ul.todo li .buttons button.complete svg .fill {
   fill: #25b99a;
 }
+.container ul.todo#completed {
+  margin-top: 20px;
+}
 .container ul.todo#completed li .buttons button.complete svg {
   background: #25b99a;
   border:0;
   transition:background 0.2s ease;
+  -webkit-transition:background 0.2s ease;
+  -moz-transition:background 0.2s ease;
+  -ms-transition:background 0.2s ease;
+  -o-transition:background 0.2s ease;
+
 }
 .container ul.todo#completed li .buttons button.complete svg .fill {
   fill: #fff;
@@ -191,4 +199,18 @@ ul.todo {
 }
 .container ul.todo:not(#completed) li .buttons button.complete:hover svg .fill {
   fill: #fff;
+}
+.container ul.todo#completed:not(:empty) {
+  padding: 60px 0 0 0;
+  position: relative;
+}
+.container ul.todo#completed:not(:empty):before {
+  content: '';
+  width: 150px;
+  height: 2px;
+  background: #d8e5e0;
+  position: absolute;
+  top: 30px;
+  left: 200px;
+  margin: 0 0 0 -75px;
 }
