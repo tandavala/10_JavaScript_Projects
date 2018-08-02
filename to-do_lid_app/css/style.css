@@ -4,6 +4,9 @@
 
 }
 
+body {
+  background: #edf0f1;
+}
 body, input, button {
   font-family: 'Roboto', sans-serif;
 }
@@ -69,6 +72,7 @@ header button {
   margin-right: -9px;
   background: #fff;
   outline: none;
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
