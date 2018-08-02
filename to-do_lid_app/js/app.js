@@ -4,9 +4,8 @@
 // we add the text to the to-do list
 document.getElementById('add').addEventListener('click',function(){
    var val = document.getElementById('item').value;
-   if (val){
-     
-   }else{
-     console.log('no value given!');
-   }
+   if (val) addItemTodo(val);
 });
+function addItemTodo(item){
+  console.log(item);
+}
