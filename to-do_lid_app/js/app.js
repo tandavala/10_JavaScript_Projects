@@ -26,6 +26,9 @@ function addItemTodo(text){
   remove.classList.add('remove');
   remove.innerHTML = removeSVG;
 
+  // add click event for the remove button
+  remove.addEventListener('click', removeItem);
+
   var complete = document.createElement('button');
   complete.classList.add('complete');
   complete.innerHTML = completeSVG;
@@ -34,4 +37,11 @@ function addItemTodo(text){
   buttons.appendChild(complete);
   item.appendChild(buttons);
   list.insertBefore(item, list.childNodes[0]);
+}
+
+// remove item function
+function removeItem(){
+  var item = this.parentNode.parentNode;
+  var parnt = item.parentNode;
+  parnt.removeChild(item);
 }
