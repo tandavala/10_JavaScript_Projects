@@ -36,6 +36,7 @@ header input {
   font-weight: 400px;
   text-indent: 20px;
   box-shadow: none;
+  padding: 0px 60px 0px 0px;
   outline: none;
   appearance:none;
   -webkit-appearance: none;
@@ -62,4 +63,16 @@ header button {
   top: 5px;
   right: 15px;
   z-index: 2;
+  border-radius: 25px;
+  border: 0px;
+  box-shadow: none;
+  margin-right: -9px;
+  background: #fff;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+
 }
