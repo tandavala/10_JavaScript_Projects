@@ -6,7 +6,11 @@ var completeSVG = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:x
 // we add the text to the to-do list
 document.getElementById('add').addEventListener('click',function(){
    var val = document.getElementById('item').value;
-   if (val) addItemTodo(val);
+   if (val){
+     addItemTodo(val);
+     document.getElementById('item').value = '';
+   }
+
 });
 
 // adding a new item to the to-do list
