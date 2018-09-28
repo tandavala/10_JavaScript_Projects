@@ -7,13 +7,13 @@
     vertical-align: baseline;;
 }
 .container .header {
- background-color: #576070;
+ background-image: url("1.jpeg");
  height: 150px;
  border-bottom: 3px solid #7592c4;
 }
 .container .header h3 {
   text-align: center;
-  color: #fff;
+  color: #5f646d;
   font-size: 39px;
   padding-top: 16px;
 
@@ -21,6 +21,8 @@
 .container .header h3 small {
    font-size: 12px;
 }
+/*------------------------------------------------------------------------------
+============ MENU =============================================================*/
 .container .header .menu {
   list-style: none;
   float: right;
@@ -32,9 +34,41 @@
   margin-left: 12px;
 }
 .container .header .menu  li a {
-  color: #c3cee2;
+  color: #5f646d;
   text-decoration: none;
 }
 .container .header .menu  li a:hover {
   color: #fff;
+}
+/*------------------------------------------------------------------------------
+============ MAIN =============================================================*/
+.container .main {
+  width: 400px;
+  background-image: url("2.jpeg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  color: #fff;
+  border-radius: 10px;
+  margin: -19px auto 0 auto;
+  height: 300px;
+}
+.container .main h2 {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 29px;
+}
+.container .main h3 {
+  text-align: center;
+  padding-top: 60px;
+  font-size: 29px;
+}
+.container .main h4 {
+  text-align: center;
+  font-size: 29px;
+}
+.container .main .iconpic {
+  margin-left: 122px;
+}
+.container .main .iconpic  img {
+
 }

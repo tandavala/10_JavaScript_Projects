@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>geolocation wheather app</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -19,10 +20,17 @@
            <li><a href="">prozone</a></li>
          </ul>
       </header>
+      <section class="main">
+          <h2 class="temp"></h2>
+          <h3><span class="city"></span>, <span class="country"></span></h3>
+
+          <div class="iconpic">
+            <img src="" class='img img-responsive center-block'>
+          </div>
+          <h4 class="weatherDetail"></h4>
+      </section><!-- ./ main -->
     </div><!-- ./ container -->
 
-    <script>
-
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
